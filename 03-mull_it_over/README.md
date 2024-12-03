@@ -1,4 +1,4 @@
-Part 1 took 16 minutes
+Part 1 took 16 minutes \
 Part 2 took 12 minutes
 
 --- Day 3: Mull It Over ---

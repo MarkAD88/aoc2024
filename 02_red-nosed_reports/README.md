@@ -1,5 +1,6 @@
-Part 1 took 22 minutes.
-Part 2 took 45 minutes.  Had to refactor all the code to allow for a single error and then reevaluate the report levels.
+Part 1 took 22 minutes. \
+Part 2 took 45 minutes. \
+Had to refactor all the code to allow for a single error and then reevaluate the report levels.
 
 --- Day 2: Red-Nosed Reports ---
 

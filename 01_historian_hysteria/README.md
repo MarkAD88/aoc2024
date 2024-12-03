@@ -1,4 +1,6 @@
-This one was painless.  Took all of 5 minutes to do.  If only all the other days were this simple.
+This one was painless. \
+Took all of 5 minutes to do. \
+If only all the other days were this simple.
 
 --- Day 1: Historian Hysteria ---
 
