@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_red-nosed_reports", "02_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-mull_it_over", "03-mull_it_over\03-mull_it_over.csproj", "{C1A14801-B767-4549-B4FE-72F9DCFFF1EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_ceres_search", "04_ceres_search\04_ceres_search.csproj", "{DB95957C-FEE3-49C6-B375-C4509C0ED91E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{C1A14801-B767-4549-B4FE-72F9DCFFF1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1A14801-B767-4549-B4FE-72F9DCFFF1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1A14801-B767-4549-B4FE-72F9DCFFF1EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB95957C-FEE3-49C6-B375-C4509C0ED91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB95957C-FEE3-49C6-B375-C4509C0ED91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB95957C-FEE3-49C6-B375-C4509C0ED91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB95957C-FEE3-49C6-B375-C4509C0ED91E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
