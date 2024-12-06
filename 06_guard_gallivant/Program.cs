@@ -1,4 +1,5 @@
 ﻿// Should be 41
+// Should be 6
 List<string> lines = [
     "....#.....",
     ".........#",
@@ -14,18 +15,18 @@ List<string> lines = [
 
 lines = [.. File.ReadAllLines("input.txt")];
 
-var startLine = lines.First(line => line.Contains('^'));
-
-var currentY = lines.IndexOf(startLine);
-var currentX = startLine.IndexOf('^');
-
-var moveY = -1;
-var moveX = 0;
-
-var direction = Direction.North;
-
 var height = lines.Count - 1;
 var width = lines[0].Length - 1;
+
+var startLine = lines.First(line => line.Contains('^'));
+var startY = lines.IndexOf(startLine);
+var startX = startLine.IndexOf('^');
+var direction = Direction.North;
+
+var currentY = startY;
+var currentX = startX;
+var moveY = -1;
+var moveX = 0;
 
 bool IsInBounds() => currentX >= 0 && currentX <= width && currentY >= 0 && currentY <= height;
 
@@ -66,7 +67,7 @@ void TurnRight()
     }
 }
 
-HashSet<(int x, int y)> visited = [(currentX, currentY)];
+HashSet<(int x, int y, Direction direction)> visited = [(currentX, currentY, 0)];
 while (IsInBounds())
 {
     if (IsNextMoveOutOfBounds())
@@ -82,10 +83,54 @@ while (IsInBounds())
     currentX += moveX;
     currentY += moveY;
 
-    visited.Add((currentX, currentY));
+    visited.Add((currentX, currentY, 0));
 }
 
 Console.WriteLine($"Step 1: {visited.Count}");
+
+int blocks = 0;
+for (int y = 0; y <= height; y++)
+{
+    for (int x = 0; x <= width; x++)
+    {
+        if (lines[y][x] == '#')
+        {
+            continue;
+        }
+
+        currentX = startX;
+        currentY = startY;
+        direction = Direction.North;
+        moveX = 0;
+        moveY = -1;
+        visited = [];
+
+        while (IsInBounds())
+        {
+            if (!visited.Add((currentX, currentY, direction)))
+            {
+                blocks += 1;
+                break;
+            }
+
+            if (IsNextMoveOutOfBounds())
+            {
+                break;
+            }
+            else if (IsNextMoveObstructed() || (currentX + moveX == x && currentY + moveY == y))
+            {
+                TurnRight();
+            }
+            else
+            {
+                currentX += moveX;
+                currentY += moveY;
+            }
+        }
+    }
+}
+
+Console.WriteLine($"Step 2: {blocks}");
 
 enum Direction
 {
