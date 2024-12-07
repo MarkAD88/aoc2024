@@ -6,6 +6,7 @@ C# implementations and tests using .NET 9 for the
 ```text
       -----Part 1-----  -----Part 2-----
 Day   HH:MM    Success  HH:MM    Success
+  7   01:30      Yes    01:19      Yes
   6   00:37      Yes    03:15      Yes
   5   00:28      Yes    00:33      Yes
   4   00:47      Yes    00:15      Yes
@@ -36,3 +37,36 @@ I also reduced the number of computations required by doing a safety check so I
 didn't run the simulation again if a # was already in the position I was testing
 but that is the only time-saver I could figure out how to add.
 
+## Day 07 (Bridge Repair) Part 1
+Well that's 90 minutes I'm never getting back.  I could not figure out how to
+get all the unique combinations generated properly.  My actual solution was more
+of an accident than intentional.  I had been trying recursion but the final
+trick was the way in which I iterated over the operators.
+
+## Day 07 (Bridge Repair) Part 2
+I thought I had this part solved in 10 minutes.  But I made a mistake regarding how
+the concatenating operator was supposed to work.  Cost me just about an hour of
+staring at the unit test answer (11387) and trying to figure out how on earth they
+came up with the number.  In the end, the error was that i was concatenating numbers
+prior to processing the equation instead of while processing the equation.
+
+Shame on me.  It's a subtle misinterpreration of how the concatenation operator
+is supposed to work that cost me a ton of time.
+
+For example:
+
+```
+6 * 8 || 6 * 15
+6 * 86 * 15
+516 * 15
+7740
+```
+
+Instead of:
+
+```
+6 * 8 || 6 * 15
+48 || 6 * 15
+486 * 15
+7290
+```
