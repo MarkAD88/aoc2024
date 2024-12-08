@@ -79,8 +79,9 @@ technique I was using was solid but it just wouldn't come out right.. kept getti
 finally found the error.... when flipping a value from + to - I was multiplying
 by 1 instead of -1.  Stupid typo cost me big.  Again.  I'm sensing a pattern. :smiley:
 
-Part 2 should have been a 5 minute solve but I my result kept coming back too low.  The
+Part 2 should have been a 5 minute solve but my result kept coming back too low.  The
 sample input was giving me the correct answer but the full input was not.  
+
 Finally found the issue when I reread the instructions and saw:
 
 > including the antinodes that appear on every antenna:
