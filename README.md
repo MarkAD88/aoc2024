@@ -6,6 +6,7 @@ C# implementations and tests using .NET 9 for the
 ```text
       -----Part 1-----  -----Part 2-----
 Day   HH:MM    Success  HH:MM    Success
+  8   01:07      Yes    00:20      Yes
   7   01:30      Yes    01:19      Yes
   6   00:37      Yes    03:15      Yes
   5   00:28      Yes    00:33      Yes
@@ -70,3 +71,21 @@ Instead of:
 486 * 15
 7290
 ```
+
+## Day 08 (Resonant Collinearity)
+Part 1 I finished very quickly but I kept getting the wrong answer.  I knew the
+technique I was using was solid but it just wouldn't come out right.. kept getting
+11 for the sample set instead of 14.  After staring at the code for 40 minutes I
+finally found the error.... when flipping a value from + to - I was multiplying
+by 1 instead of -1.  Stupid typo cost me big.  Again.  I'm sensing a pattern. :smiley:
+
+Part 2 should have been a 5 minute solve but I my result kept coming back too low.  The
+sample input was giving me the correct answer but the full input was not.  
+Finally found the issue when I reread the instructions and saw:
+
+> including the antinodes that appear on every antenna:
+
+I had neglected to add ALL of my antenna locations to the antinode list and was
+insted only adding pairs when processing.  This left out some dangling values because
+it wasn't meeting my tests.  Adding all the antenna to the antinode list fixed things
+right up.  Cost me another 22 minutes.
