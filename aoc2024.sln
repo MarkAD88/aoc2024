@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_bridge_repair", "07_brid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_resonant_collinearity", "08_resonant_collinearity\08_resonant_collinearity.csproj", "{58914821-12F8-4536-9BFD-7C1044B8C07B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_disk_fragmenter", "09_disk_fragmenter\09_disk_fragmenter.csproj", "{8031E850-4FC2-4D4B-A5D9-BD776B209759}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{58914821-12F8-4536-9BFD-7C1044B8C07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58914821-12F8-4536-9BFD-7C1044B8C07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58914821-12F8-4536-9BFD-7C1044B8C07B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8031E850-4FC2-4D4B-A5D9-BD776B209759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8031E850-4FC2-4D4B-A5D9-BD776B209759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8031E850-4FC2-4D4B-A5D9-BD776B209759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8031E850-4FC2-4D4B-A5D9-BD776B209759}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

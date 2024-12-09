@@ -6,6 +6,7 @@ C# implementations and tests using .NET 9 for the
 ```text
       -----Part 1-----  -----Part 2-----
 Day   HH:MM    Success  HH:MM    Success
+  9   00:36      Yes    01:02      Yes
   8   01:07      Yes    00:20      Yes
   7   01:30      Yes    01:19      Yes
   6   00:37      Yes    03:15      Yes
@@ -90,3 +91,11 @@ I had neglected to add ALL of my antenna locations to the antinode list and was
 insted only adding pairs when processing.  This left out some dangling values because
 it wasn't meeting my tests.  Adding all the antenna to the antinode list fixed things
 right up.  Cost me another 22 minutes.
+
+## Day 09 (Disk Fragmenter) Part 2
+Part 2 caused me to have to reinvent my wheel from Part 1.  I think I wasted too much
+time trying to force Part 2 to work with the Part 1 code before I just allowed myself
+to just attack the problem from a different angle.
+
+Sum calculation is way too slow since I'm doing it after the fact but the imporant
+part is the sum is actually correct, don't ya think?
