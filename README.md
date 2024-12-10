@@ -6,6 +6,7 @@ C# implementations and tests using .NET 9 for the
 ```text
       -----Part 1-----  -----Part 2-----
 Day   HH:MM    Success  HH:MM    Success
+ 10   01:21      Yes    00:03      Yes
   9   00:36      Yes    01:02      Yes
   8   01:07      Yes    00:20      Yes
   7   01:30      Yes    01:19      Yes
@@ -99,3 +100,13 @@ to just attack the problem from a different angle.
 
 Sum calculation is way too slow since I'm doing it after the fact but the imporant
 part is the sum is actually correct, don't ya think?
+
+## Day 10 (Hoof It)
+Part 1 killed me.  I had the code written in 20 minutes or so but I couldn't get the
+sample to spit back a value of 36.  It kept coming back with 81 no matter what I did.
+Once I figured out I had to eliminate all the "seen" paths using a hashset it finally
+started working and I got the write answer.
+
+As luck would have it, simply reverting the Part 1 fix - no longer tracking if I'd seen
+the path or not - is what was needed to get the anser for Part 2.  Nice and easy... took
+all of 3 minutes.

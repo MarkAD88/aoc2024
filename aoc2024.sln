@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_resonant_collinearity", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_disk_fragmenter", "09_disk_fragmenter\09_disk_fragmenter.csproj", "{8031E850-4FC2-4D4B-A5D9-BD776B209759}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_hoof_it", "10_hoof_it\10_hoof_it.csproj", "{CF60142B-4CE8-43FA-B59D-C7870314F813}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{8031E850-4FC2-4D4B-A5D9-BD776B209759}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8031E850-4FC2-4D4B-A5D9-BD776B209759}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8031E850-4FC2-4D4B-A5D9-BD776B209759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF60142B-4CE8-43FA-B59D-C7870314F813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF60142B-4CE8-43FA-B59D-C7870314F813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF60142B-4CE8-43FA-B59D-C7870314F813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF60142B-4CE8-43FA-B59D-C7870314F813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
