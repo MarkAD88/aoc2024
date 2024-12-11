@@ -1,5 +1,7 @@
 ﻿// Tracks precalculated stone count for a combination of number and iterations
 // This was the magic ticket to making computation ridiculously fast
+using System.Diagnostics;
+
 Dictionary<(long Number, int Iterations), long> solved = [];
 
 // Should be 55312
@@ -11,8 +13,13 @@ Console.WriteLine(Solve("20 82084 1650 3 346355 363 7975858 0", 75));
 
 long Solve(string stones, int iterations)
 {
+    var timer = Stopwatch.StartNew();
     var numbers = stones.Split(" ").Select(long.Parse);
-    return SolveMultiple(numbers, iterations);
+    var result = SolveMultiple(numbers, iterations);
+    timer.Stop();
+    // Console.WriteLine($"{timer.ElapsedMilliseconds} for {iterations} iterations for \"{stones}\"");
+    Console.Write($"{timer.ElapsedMilliseconds}ms - ");
+    return result;
 }
 
 long SolveMultiple(IEnumerable<long> stones, int iterations)
