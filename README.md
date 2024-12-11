@@ -6,6 +6,7 @@ C# implementations and tests using .NET 9 for the
 ```text
       -----Part 1-----  -----Part 2-----
 Day   HH:MM    Success  HH:MM    Success
+ 11   00:26      Yes    00:58      Yes
  10   01:21      Yes    00:03      Yes
   9   00:36      Yes    01:02      Yes
   8   01:07      Yes    00:20      Yes
@@ -110,3 +111,11 @@ started working and I got the write answer.
 As luck would have it, simply reverting the Part 1 fix - no longer tracking if I'd seen
 the path or not - is what was needed to get the anser for Part 2.  Nice and easy... took
 all of 3 minutes.
+
+## Day 11 (Plutonian Pebbles)
+Part 1 was a quick easy brute force solve.  
+
+Part 2 required me to completely refactor my solution in order to get the solve to happen
+before the heat death of the universe.  Using the brute force approach, I had let it run
+for just under 30 minutes and it STILL was only about 1/3 of the complete.  I should have
+seen that coming with how easy Part 1 was.
