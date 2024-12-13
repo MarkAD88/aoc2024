@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_hoof_it", "10_hoof_it\10
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_plutonian_pebbles", "11_plutonian_pebbles\11_plutonian_pebbles.csproj", "{0DF800C8-F88B-420F-BA8F-5380FE510EE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_garden_groups", "12_garden_groups\12_garden_groups.csproj", "{13C11B23-0FC7-4D72-B259-347871AC25C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{0DF800C8-F88B-420F-BA8F-5380FE510EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DF800C8-F88B-420F-BA8F-5380FE510EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DF800C8-F88B-420F-BA8F-5380FE510EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C11B23-0FC7-4D72-B259-347871AC25C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C11B23-0FC7-4D72-B259-347871AC25C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C11B23-0FC7-4D72-B259-347871AC25C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C11B23-0FC7-4D72-B259-347871AC25C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
