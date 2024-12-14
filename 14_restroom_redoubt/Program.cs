@@ -38,70 +38,90 @@ foreach (var line in input)
     robots.Add((robot[0], robot[1], robot[2], robot[3]));
 }
 
-List<(int x, int y)> final = [];
-int[] quadrants = [0, 0, 0, 0];
-foreach (var (x, y, vx, vy) in robots)
+List<(int x, int y)> Calculate(IEnumerable<(int x, int y, int vx, int vy)> robots, int iterations)
 {
-    var dx = x + (vx * seconds);
-    var dy = y + (vy * seconds);
-    dx = dx < 0
-        ? width - Math.Abs(dx % width)
-        : dx % width;
-    if (dx == width)
-        dx = 0;
-
-    dy = dy < 0
-        ? height - Math.Abs(dy % height)
-        : dy % height;
-    if (dy == height)
-        dy = 0;
-
-    final.Add((dx, dy));
-
-    Console.WriteLine($"{dx}, {dy}");
-
-    if (dx == width / 2 || dy == height / 2)
-        continue;
-
-    if (dx < width / 2)
+    var results = new List<(int x, int y)>(robots.Count());
+    foreach (var (x, y, vx, vy) in robots)
     {
-        if (dy < height / 2)
+        var dx = x + (vx * seconds);
+        var dy = y + (vy * seconds);
+        dx = dx < 0
+            ? width - Math.Abs(dx % width)
+            : dx % width;
+        if (dx == width)
+            dx = 0;
+
+        dy = dy < 0
+            ? height - Math.Abs(dy % height)
+            : dy % height;
+        if (dy == height)
+            dy = 0;
+
+        results.Add((dx, dy));
+    }
+
+    return results;
+}
+
+void Render(IEnumerable<(int x, int y)> positions)
+{
+    Console.Clear();
+    char[] numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    for (int y = 0; y < height; y++)
+    {
+        var points = positions.Where(robot => robot.y == y).GroupBy(robot => robot.x);
+        var builder = new StringBuilder(new string('.', width));
+        foreach (var group in points)
         {
-            quadrants[0]++;
+            builder[group.Key] = numbers[group.Count()];
+        }
+        Console.WriteLine(builder.ToString());
+    }
+}
+
+int[] GetQuadrantCounts(IEnumerable<(int x, int y)> positions)
+{
+    int[] results = [0, 0, 0, 0];
+
+    foreach (var (x, y) in positions)
+    {
+
+        if (x == width / 2 || y == height / 2)
+            continue;
+
+        if (x < width / 2)
+        {
+            if (y < height / 2)
+            {
+                results[0]++;
+            }
+            else
+            {
+                results[2]++;
+            }
         }
         else
         {
-            quadrants[2]++;
-        }
-    }
-    else
-    {
-        if (dy < height / 2)
-        {
-            quadrants[1]++;
-        }
-        else
-        {
-            quadrants[3]++;
+            if (y < height / 2)
+            {
+                results[1]++;
+            }
+            else
+            {
+                results[3]++;
+            }
         }
     }
 
+    return results;
 }
 
-char[] numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-for (int y = 0; y < height; y++)
-{
-    var points = final.Where(robot => robot.y == y).GroupBy(robot => robot.x);
-    var builder = new StringBuilder(new string('.', width));
-    foreach (var group in points)
-    {
-        builder[group.Key] = numbers[group.Count()];
-    }
-    Console.WriteLine(builder.ToString());
-}
+var final = Calculate(robots, seconds);
+
+Render(final);
 
 var safetyFactor = 0;
-foreach (var quadrant in quadrants)
+foreach (var quadrant in GetQuadrantCounts(final))
 {
     Console.WriteLine(quadrant);
     safetyFactor = safetyFactor == 0
