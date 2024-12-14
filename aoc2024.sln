@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_garden_groups", "12_gard
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_claw_contraption", "13_claw_contraption\13_claw_contraption.csproj", "{9680E4DC-131A-4C13-B554-5C87712C5014}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_restroom_redoubt", "14_restroom_redoubt\14_restroom_redoubt.csproj", "{8D8FFF95-72C7-436C-B8FF-4A349D29CD2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +94,10 @@ Global
 		{9680E4DC-131A-4C13-B554-5C87712C5014}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9680E4DC-131A-4C13-B554-5C87712C5014}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9680E4DC-131A-4C13-B554-5C87712C5014}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8FFF95-72C7-436C-B8FF-4A349D29CD2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8FFF95-72C7-436C-B8FF-4A349D29CD2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8FFF95-72C7-436C-B8FF-4A349D29CD2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8FFF95-72C7-436C-B8FF-4A349D29CD2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
