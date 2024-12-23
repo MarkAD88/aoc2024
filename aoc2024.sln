@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_restroom_redoubt", "14_r
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_warehouse_woes", "15_warehouse_woes\15_warehouse_woes.csproj", "{ECEB19E4-2109-41CF-AFDD-07FFBF3D7F03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23_lan_party", "23_lan_party\23_lan_party.csproj", "{B5AEC369-61DB-4501-8DAE-DF20CCD82AF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,10 @@ Global
 		{ECEB19E4-2109-41CF-AFDD-07FFBF3D7F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECEB19E4-2109-41CF-AFDD-07FFBF3D7F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECEB19E4-2109-41CF-AFDD-07FFBF3D7F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5AEC369-61DB-4501-8DAE-DF20CCD82AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5AEC369-61DB-4501-8DAE-DF20CCD82AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5AEC369-61DB-4501-8DAE-DF20CCD82AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5AEC369-61DB-4501-8DAE-DF20CCD82AF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
