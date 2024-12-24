@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_warehouse_woes", "15_war
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23_lan_party", "23_lan_party\23_lan_party.csproj", "{B5AEC369-61DB-4501-8DAE-DF20CCD82AF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24_crossed_wires", "24_crossed_wires\24_crossed_wires.csproj", "{8973412F-80E3-48C9-ABAC-C2E812884260}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -110,6 +112,10 @@ Global
 		{B5AEC369-61DB-4501-8DAE-DF20CCD82AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5AEC369-61DB-4501-8DAE-DF20CCD82AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5AEC369-61DB-4501-8DAE-DF20CCD82AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8973412F-80E3-48C9-ABAC-C2E812884260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8973412F-80E3-48C9-ABAC-C2E812884260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8973412F-80E3-48C9-ABAC-C2E812884260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8973412F-80E3-48C9-ABAC-C2E812884260}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
