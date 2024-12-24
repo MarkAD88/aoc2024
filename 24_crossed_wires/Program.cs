@@ -115,4 +115,4 @@ var orderedBits = things
 var bitString = new string(orderedBits);
 var result = Convert.ToInt64(bitString, 2);
 
-Console.WriteLine($"{bitString} - {result}");
+Console.WriteLine($"Part 1: {bitString} - {result}");
