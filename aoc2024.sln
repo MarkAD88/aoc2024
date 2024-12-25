@@ -42,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23_lan_party", "23_lan_part
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24_crossed_wires", "24_crossed_wires\24_crossed_wires.csproj", "{8973412F-80E3-48C9-ABAC-C2E812884260}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25_code_chronicle", "25_code_chronicle\25_code_chronicle.csproj", "{BFC9C8DD-657D-46F1-AF06-7DDED735D736}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -116,6 +118,10 @@ Global
 		{8973412F-80E3-48C9-ABAC-C2E812884260}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8973412F-80E3-48C9-ABAC-C2E812884260}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8973412F-80E3-48C9-ABAC-C2E812884260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC9C8DD-657D-46F1-AF06-7DDED735D736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC9C8DD-657D-46F1-AF06-7DDED735D736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC9C8DD-657D-46F1-AF06-7DDED735D736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC9C8DD-657D-46F1-AF06-7DDED735D736}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
