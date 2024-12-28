@@ -43,6 +43,18 @@ DrawMap(columns, rows, corrupted);
 var p1 = ShortestPath(corrupted, columns, rows, new(0, 0), new(columns - 1, rows - 1));
 Console.WriteLine($"Part 1: {p1}");
 
+for(int i = 0; i < input.Length; i++)
+{
+    HashSet<Point> temp = CreateCorruptedMap(input, i + 1);
+    var result = ShortestPath(temp, columns, rows, new(0, 0), new(columns - 1, rows - 1));
+    Console.WriteLine($"{input[i]}, {result}");
+    if (result == 0)
+    {
+        Console.WriteLine($"Part 2: {input[i]}");
+        break;
+    }
+}
+
 HashSet<Point> CreateCorruptedMap(string[] input, int steps)
 {
     return input
@@ -66,10 +78,6 @@ int ShortestPath(HashSet<Point> corrupted, int columns, int rows, Point start, P
 
         if (!seen.Add(entry))
             continue;
-
-        Console.SetCursorPosition(entry.Column, entry.Row);
-        Console.Write('O');
-        // Console.ReadKey(true);
 
         foreach(var direction in DIRECTIONS)
         {
